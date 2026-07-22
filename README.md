@@ -15,13 +15,21 @@ Production-ready cloud portfolio built with:
 ## Architecture
 
 GitHub
+
 ↓
+
 GitHub Actions
+
 ↓
+
 S3
+
 ↓
+
 CloudFront
+
 ↓
+
 Users
 
 ## Technologies
