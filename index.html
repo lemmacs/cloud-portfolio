@@ -6,10 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian Lemma | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link
+    rel="icon"
+    href="assets/images/favicon.png">
 </head>
 
 <body>
 <main>
+    <nav>
+        <h2>Christian Lemma</h2>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <header class="hero">
     <h1>Christian Lemma</h1>
 
@@ -18,39 +32,60 @@
     </p>
 
     <p class="intro">
-        Computer Science graduate passionate about building scalable software,
-        cloud applications, and AI-powered systems.
+        Computer Science graduate specializing in software engineering, AI, and cloud computing. Passionate about building scalable applications, automating deployments, and solving real-world engineering problems.
+    </p>
+
+    <p class="email">
+        christianlemma1@gmail.com
     </p>
 
     <div class="buttons">
-        <a href="resume/" class="btn">Resume</a>
+        <a href="resume/Christian_Lemma_Resume.pdf" class="btn" target="_blank">Resume</a>
         <a href="https://github.com/lemmacs" target="_blank" class="btn">GitHub</a>
         <a href="https://linkedin.com/in/christian-lemma" target="_blank" class="btn">LinkedIn</a>
     </div>
     </header>
 
-    <section>
+    <section id="about">
         <h2>About Me</h2>
 
         <p>
             I'm a Computer Science graduate from Virginia Commonwealth University
-            with experience building full-stack applications, distributed systems,
-            machine learning solutions, and cloud infrastructure using AWS.
+            with a concentration in Data Science and a minor in Artificial Intelligence.
+
+            I enjoy building cloud applications, backend systems, AI software,
+            and automation tools. I'm currently expanding my experience with AWS,
+            DevOps, and distributed systems while looking for software engineering opportunities.
         </p>
     </section>
 
-    <section>
-        <h2>Projects</h2>
+    <section id="projects">
+        <h2>Featured Projects</h2>
 
         <div class="project">
 
             <h3>AWS Cloud Portfolio</h3>
 
             <p>
-                Designed and deployed this portfolio using Amazon S3, CloudFront,
-                GitHub Actions, and IAM. Built an automated CI/CD pipeline that
-                deploys every push to GitHub.
+                Designed and deployed a production-style static website using Amazon S3,
+                CloudFront, IAM, and GitHub Actions with automated CI/CD deployment.
             </p>
+
+            <p class="tech">
+                AWS • S3 • CloudFront • GitHub Actions • IAM • HTML • CSS
+            </p>
+
+            <a class="btn"
+            href="https://github.com/lemmacs/cloud-portfolio"
+            target="_blank">
+            View Code
+            </a>
+
+            <a class="btn"
+            href="https://d3u8c6bjwc5l68.cloudfront.net"
+            target="_blank">
+            Live Demo
+            </a>
 
         </div>
 
@@ -59,8 +94,12 @@
             <h3>Words2Motion</h3>
 
             <p>
-                AI-powered robotic command interpreter for the ABB GoFa robot using
-                Python, Unity, speech recognition, and natural language processing.
+                Built an AI-powered speech interface that translates natural language
+                commands into robotic movement for the ABB GoFa collaborative robot.
+            </p>
+
+            <p class="tech">
+                Python • Unity • C# • Azure Speech Recognition • Azure Language Studio and CLU • NLP
             </p>
 
         </div>
@@ -70,29 +109,109 @@
             <h3>Machine Learning Word Sense Disambiguation</h3>
 
             <p>
-                Built SVM and neural network models using GloVe embeddings,
-                achieving 83% classification accuracy.
+                Developed SVM and neural network models using GloVe embeddings to
+                classify word meanings, achieving 83% accuracy.
+            </p>
+
+            <p class="tech">
+                Python • PyTorch • Scikit-Learn • GloVe • NLP • Machine Learning
             </p>
 
         </div>
     </section>
 
-    <section>
+    <section id="skills">
         <h2>Technical Skills</h2>
 
-        <p>
-            Python • Java • C • SQL • AWS • Docker • Git • Linux • HTML • CSS • JavaScript
-        </p>
+        <ul class="skills">
+
+            <li>Python</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>SQL</li>
+            <li>AWS</li>
+            <li>Docker</li>
+            <li>Git</li>
+            <li>Linux</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+
+        </ul>
     </section>
 
     <section>
-        <h2>Contact</h2>
+
+        <h2>Highlights</h2>
+
+        <ul class="highlights">
+
+            <li>🎓 B.S. Computer Science, Virginia Commonwealth University</li>
+
+            <li>☁️ Built and deployed production-style AWS infrastructure</li>
+
+            <li>🤖 Developed AI-powered robotic speech command system</li>
+
+            <li>🧠 Built machine learning models achieving 83% accuracy</li>
+
+        </ul>
+
+    </section>
+
+    <section>
+
+        <h2>Currently Learning</h2>
 
         <p>
-            christianlemma1@gmail.com
+
+        AWS Lambda • API Gateway • DynamoDB • Docker • Kubernetes
+
         </p>
+
+    </section>
+
+    <section id="contact">
+
+        <h2>Let's Connect</h2>
+
+        <p>
+
+        I'm currently seeking Software Engineering opportunities.
+        Feel free to reach out!
+
+        </p>
+
+        <div class="buttons">
+
+            <a
+            class="btn"
+            href="mailto:christianlemma1@gmail.com">
+
+            Email Me
+
+            </a>
+
+            <a
+            class="btn"
+            href="https://linkedin.com/in/christian-lemma"
+            target="_blank">
+
+            LinkedIn
+
+            </a>
+
+        </div>
+
     </section>
 </main>
+
+<footer>
+
+    <p>
+    © 2026 Christian Lemma
+    </p>
+
+</footer>
 
 </body>
 

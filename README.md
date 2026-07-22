@@ -1,24 +1,36 @@
 # Christian Lemma - Portfolio
 
-Personal portfolio website showcasing my software engineering projects, technical skills, and experience.
+# Cloud Portfolio
+
+Production-ready cloud portfolio built with:
+
+## Features
+
+- AWS S3
+- CloudFront
+- GitHub Actions
+- IAM
+- HTML/CSS/JavaScript
+
+## Architecture
+
+GitHub
+↓
+GitHub Actions
+↓
+S3
+↓
+CloudFront
+↓
+Users
 
 ## Technologies
 
-- HTML
-- CSS
-- JavaScript
-
-## Current Status
-
-Currently being developed and deployed through AWS.
-
-## Planned Features
-
-- AWS S3 hosting
-- CloudFront CDN deployment
-- Serverless backend with AWS Lambda
-- DynamoDB project database
-- GitHub Actions CI/CD pipeline
+- HTTPS
+- CI/CD
+- Private S3 Bucket
+- CloudFront CDN
+- Automatic Deployments
 
 ## Author
 
