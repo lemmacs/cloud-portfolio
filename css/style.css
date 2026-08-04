@@ -216,3 +216,23 @@ margin-left:25px;
 line-height:2;
 
 }
+
+.visitor-counter {
+
+    margin-top: 30px;
+
+    display: inline-block;
+
+    background: #1e293b;
+
+    color: #38bdf8;
+
+    padding: 12px 24px;
+
+    border-radius: 999px;
+
+    font-weight: bold;
+
+    border: 1px solid #334155;
+
+}
