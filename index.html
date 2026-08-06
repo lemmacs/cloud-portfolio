@@ -14,9 +14,7 @@
 <body>
 <main>
     <nav>
-        <p id="visitor-count" class="visitor-counter">
-            Loading visitors...
-        </p>
+        
 
         <ul>
             <li><a href="#about">About</a></li>
@@ -42,6 +40,11 @@
         <a href="https://github.com/lemmacs" target="_blank" class="btn">GitHub</a>
         <a href="https://linkedin.com/in/christian-lemma" target="_blank" class="btn">LinkedIn</a>
     </div>
+
+    <p id="visitor-count" class="visitor-counter">
+            Loading visitors...
+    </p>
+
     </header>
 
     <section id="about">
@@ -53,7 +56,7 @@
 
             I enjoy building cloud applications, backend systems, AI software,
             and automation tools. I'm currently expanding my experience with AWS,
-            DevOps, and distributed systems while looking for software engineering opportunities.
+            DevOps, and distributed systems while looking for Full Stack opportunities.
         </p>
     </section>
 
@@ -61,9 +64,13 @@
 
         <h2>Cloud Architecture</h2>
 
+        <img src="cloud_pic.png" width="960" style="border-radius: 10px;" class="architecture-diagram">
+
         <p>
 
-        This portfolio is hosted on Amazon S3 behind CloudFront. Deployments are automated through GitHub Actions. A serverless visitor counter uses API Gateway, AWS Lambda, and DynamoDB.
+        This portfolio is hosted on Amazon S3 behind CloudFront. 
+        Deployments are automated through GitHub Actions. 
+        A serverless visitor counter uses API Gateway, AWS Lambda, and DynamoDB.
 
         </p>
 
@@ -141,26 +148,51 @@
     <section id="skills">
         <h2>Technical Skills</h2>
 
-        <ul class="skills">
+        <div class="skills-container">
 
-            <li>Python</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>SQL</li>
-            <li>AWS</li>
-            <li>Docker</li>
-            <li>Git</li>
-            <li>Linux</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
+            <div class="skills-column">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
 
-        </ul>
+            <div class="skills-column">
+                <h3>Cloud & DevOps</h3>
+                <ul>
+                    <li>AWS</li>
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                </ul>
+            </div>
+
+            <div class="skills-column">
+                <h3>Web Development</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+
+            <div class="skills-column">
+                <h3>Tools</h3>
+                <ul>
+                    <li>Git</li>
+                    <li>Linux</li>
+                    <li>GitHub Actions</li>
+                </ul>
+            </div>
+
+        </div>
     </section>
 
     <section>
 
-        <h2>Highlights</h2>
+        <h2>Achievements</h2>
 
         <ul class="highlights">
 
