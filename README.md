@@ -131,7 +131,7 @@ AWS credentials used by GitHub Actions are stored as GitHub repository secrets r
     |
     |──── assets/
     |    
-    |        └── images/
+    |        └── images/ 
     |            └── cloud_pic.png
     |            └── favicon.png
     |    
