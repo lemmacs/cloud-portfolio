@@ -46,6 +46,8 @@ function trackProjectClick() {
 
     projectLinks.forEach((link) => {
         link.addEventListener("click", () => {
+            if (isExcludedBrowser()) return;
+            
             const eventRecord = {
                 event_name: link.dataset.analyticsEvent,
                 project: link.dataset.project,
