@@ -39,23 +39,31 @@ async function getVisitorCount() {
 
 getVisitorCount();
 
-function trackProjectClick() {
-    const projectLinks = document.querySelectorAll(
-        '[data-analytics-event="project-demo-click"]'
-    );
+const ANALYTICS_API_URL =
+    "https://onhwcq5ckh.execute-api.us-east-1.amazonaws.com/analytics-event";
 
-    projectLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-            if (isExcludedBrowser()) return;
-            
-            const eventRecord = {
-                event_name: link.dataset.analyticsEvent,
-                project: link.dataset.project,
-                timestamp: new Date().toISOString()
-            };
-            console.log("Analytics event:", eventRecord);
+const projectLinks = document.querySelectorAll(
+    '[data-analytics-event="project_click"]'
+);
+
+projectLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        if (isExcludedBrowser()) return;
+
+        const eventRecord = {
+            event_name: link.dataset.analyticsEvent,
+            project: link.dataset.project
+        };
+
+        fetch(ANALYTICS_API_URL, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(eventRecord),
+                keepalive: true
+        }).catch((error) => {
+            console.error("Analytics request failed:", error);
         });
     });
-}
-
-trackProjectClick();
+});
