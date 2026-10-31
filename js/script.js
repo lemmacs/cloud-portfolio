@@ -42,18 +42,25 @@ getVisitorCount();
 const ANALYTICS_API_URL =
     "https://onhwcq5ckh.execute-api.us-east-1.amazonaws.com/analytics-event";
 
-const projectLinks = document.querySelectorAll(
-    '[data-analytics-event="project_click"]'
+const analyticsLinks  = document.querySelectorAll(
+    '[data-analytics-event]'
 );
 
-projectLinks.forEach((link) => {
+analyticsLinks.forEach((link) => {
     link.addEventListener("click", () => {
         if (isExcludedBrowser()) return;
 
         const eventRecord = {
-            event_name: link.dataset.analyticsEvent,
-            project: link.dataset.project
+            event_name: link.dataset.analyticsEvent
         };
+
+        if (link.dataset.project) {
+            eventRecord.project = link.dataset.project;
+        }
+
+        if (link.dataset.section) {
+            eventRecord.section = link.dataset.section;
+        }
 
         fetch(ANALYTICS_API_URL, {
                 method: "POST",
